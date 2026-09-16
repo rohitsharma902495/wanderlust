@@ -1,12 +1,10 @@
 const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 
-console.log("Cloudinary ENV Check:", process.env.CLOUD_NAME, process.env.CLOUD_API_KEY ? "Key OK" : "Key MISSING");
-
 cloudinary.config({
-    cloud_name: process.env.CLOUD_NAME,
-    api_key: process.env.CLOUD_API_KEY,
-    api_secret: process.env.CLOUD_API_SECRET
+    cloud_name: 'y783bexd',
+    api_key: '338761753996333',
+    api_secret: 'rwYR0bWnAVdmDj-4XycDKm6s5C8' // yahi jo Render pe daal raha hai
 });
 
 const storage = new CloudinaryStorage({
